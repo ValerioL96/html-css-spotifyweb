@@ -3,3 +3,74 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100wh;
+}
+
+.flex{
+    display: flex;
+}
+
+div.container{
+    flex-direction: row;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*CUSTOM HEADER*/
+
+header{
+    width: 20%;
+    background-color: blue;
+    line-height: 2rem;
+}
+
+header ul>li{
+    margin-bottom: .5rem;
+}
+
+/*style logo e nav*/
+
+section.logo{
+    margin: 1rem;
+}
+
+/*style playlist*/
+
+section.playlist{
+    margin: 1rem;
+    padding-bottom: 10rem;
+}
+
+section.playlist input{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding:.3rem .5rem;
+    border-radius: 0;
+}
+
+section.playlist p{
+    display: inline-block;
+}
+
+/*style footer header*/
+
+section.footer-header{
+    margin: 1rem;
+}
+
+
+
+
+main{
+    width: 80%;
+    background-color: red;
+}
+
+footer{
+    height: 6rem;
+    background-color: green;
+}
+
