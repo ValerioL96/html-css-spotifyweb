@@ -188,12 +188,47 @@ div.music-popular article>h5{
     padding-top: 1rem;
 }
 
-
-
-
+/*CUSTOM FOOTER*/
 
 footer{
-    height: 6rem;
+
     background-color: green;
 }
 
+footer section.toolbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/*style div.brano*/
+
+section.toolbar div.brano>div.img{
+    height: 50px;
+    width: 50px;
+    background-color: coral;
+    
+}
+
+section.toolbar div.brano div.titolo-brano{
+    font-size: .8rem;
+    margin: .5rem;
+}
+
+/*style div.brano*/
+
+section.toolbar div.play>div.img{
+    height: 50px;
+    width: 500px;
+    background-color: coral;
+    
+}
+
+/*style div.brano*/
+
+section.toolbar div.struments>div.img{
+    height: 50px;
+    width: 200px;
+    background-color: coral;
+    
+}
