@@ -6,6 +6,7 @@
 
 body{
     font-family:"montserrat";
+    font-weight: bold;
     color: white;
 }
 
@@ -38,6 +39,7 @@ section.logo>img{
 
 section nav{
     margin: 1rem;
+    color: hsl(0, 0%, 36.1%);
 }
 
 section nav ul li>img{
@@ -50,23 +52,40 @@ section nav ul li>img{
 section.playlist{
     margin: 1rem;
     padding-bottom: 10rem;
+    color: hsl(0, 0%, 36.1%);
+}
+
+section.playlist h4{
+    margin-bottom: .8rem;
+    color: white;
 }
 
 section.playlist input{
     display: inline-block;
     font-size: 1.5rem;
-    padding:.3rem .5rem;
+    color: black;
+    padding:.2rem .5rem;
     border-radius: 0;
+    background-color: hsl(0, 0%, 63.9%);
+    margin-bottom: 1rem;
 }
 
 section.playlist p{
     display: inline-block;
+    margin-left: .5rem;
 }
 
 /*style footer header*/
 
 section.footer-header{
     margin: 1rem;
+}
+
+section.footer-header>p{
+    color: hsl(0, 0%, 36.1%);
+    padding-bottom: .8rem;
+    margin-bottom: 1rem;
+    border-bottom: solid hsl(0, 0%, 36.1%);
 }
 
 /*CUSTOM MAIN*/
@@ -79,7 +98,6 @@ main{
 /*style button upgrade*/
 
 main section.upgrade{
-  
     padding: 1rem;
     justify-content: flex-end;
     align-items: center;
@@ -87,6 +105,9 @@ main section.upgrade{
 }
 
 section.upgrade>input{
+    background-color: hsl(222, 38.5%, 5.1%);
+    color: white;
+    border: solid white;
     padding: .5rem 3rem;
     border-radius: 80px;
 }
@@ -107,8 +128,13 @@ section.nav-main ul>li{
 
 /*style recent*/
 
+main section.recent{
+    padding-bottom: 1rem;
+}
+
 main section.recent>h2{
     margin: 1rem;
+    padding-bottom: 1rem;
 }
 
 section.recent div.music{
@@ -124,17 +150,24 @@ section.recent div.music article{
   
 }
 
-div.music article>div.img{
-    background-color: aqua;
+div.music article>img{
     height: 180px;
-    width: 180px;
 }
 
 div.music article>h5{
     padding-top: 1rem;
 }
 
+div.music article>p{
+    color: hsl(0, 0%, 36.1%);
+    font-size:x-small;
+}
+
 /*style Doe*/
+
+main section.doe{
+    padding-bottom: 1rem;
+}
 
 main section.doe>h2{
     margin: 1rem 1rem 0rem;
@@ -142,6 +175,9 @@ main section.doe>h2{
 
 main section.doe>p{
     margin-left: 1rem;
+    color: hsl(0, 0%, 36.1%);
+    font-size:x-small;
+    padding-bottom: 1rem;
 }
 
 section.doe div.music-doe{
@@ -156,10 +192,8 @@ section.doe div.music-doe article{
     line-height: 1.2rem;
 }
 
-div.music-doe article>div.img{
-    background-color: aqua;
+div.music-doe article>img{
     height: 180px;
-    width: 180px;
 }
 
 div.music-doe article>h5{
@@ -168,13 +202,20 @@ div.music-doe article>h5{
 
 /*style popular*/
 
+main section.popular{
+    padding-bottom: 1rem;
+}
+
 main section.popular>h2{
     margin: 1rem 1rem 0rem;
 }
 
 main section.popular>p{
-    margin-left: 1rem;
-}
+     margin-left: 1rem;
+     color: hsl(0, 0%, 36.1%);
+     font-size:x-small;
+     padding-bottom: 2rem;
+    }
 
 section.popular div.music-popular{
     justify-content: flex-start;
@@ -188,11 +229,9 @@ section.popular div.music-popular article{
     line-height: 1.2rem;
 }
 
-div.music-popular article>div.img{
-    background-color: aqua;
+div.music-popular article>img{
     border-radius: 100%;
     height: 180px;
-    width: 180px;
 }
 
 div.music-popular article>h5{
@@ -214,28 +253,45 @@ footer section.toolbar{
 
 /*style div.brano*/
 
-section.toolbar div.brano>div.img{
+section.toolbar div.brano>img{
     height: 50px;
-    width: 50px;
-    background-color: coral;
-    
+}
+
+section.toolbar div.brano>p{
+
+    color: hsl(0, 0%, 36.1%);
+    padding: 1rem 0rem 0rem .5rem;
 }
 
 section.toolbar div.brano div.titolo-brano{
+    padding-right: 2rem;
+    padding-left: .5rem;
     font-size: .8rem;
     margin: .5rem;
 }
 
-/*style div.brano*/
+div.brano div.titolo-brano>p{
+    color: hsl(0, 0%, 36.1%);
+    font-size:x-small;
+}
 
-section.toolbar div.play>div.img{
-    height: 50px;
-    width: 500px;
-    background-color: coral;
+/*style div.play*/
+
+section.toolbar div.play{
+    flex-direction: column;  
+}
+
+div.play div.command>i{
+    padding: .8rem 1rem;
+    font-size: 1.5rem;
+}
+
+div.play div.barra{
     
 }
 
-/*style div.brano*/
+
+/*style div.struments*/
 
 section.toolbar div.struments>div.img{
     height: 50px;

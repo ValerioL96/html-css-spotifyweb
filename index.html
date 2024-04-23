@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
 
+    <!--font awesome-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <!--font family-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +57,7 @@
     
                 <section class="playlist">
     
-                    <h3>PLAYLIST</h3>
+                    <h4>PLAYLIST</h4>
                     <input type="button" value="+">
                     <p>Crea la tua playlist</p>
                     <ul>
@@ -112,7 +119,7 @@
     
                         <article>
     
-                            <div class="img"></div>
+                            <img src="./img/metal_lifting.jpg" alt="metal">
                             <h5>Heavy Metal</h5>
                             <p>Subtitle</p>
         
@@ -120,40 +127,40 @@
     
                         <article>
     
-                            <div class="img"></div>
-                            <h5>Heavy Metal</h5>
+                            <img src="./img/stranger.jpeg" alt="stranger">
+                            <h5>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h5>
+                            <p>Kyle Dixon & Michael Stein</p>
+        
+                        </article>
+    
+                        <article>
+    
+                            <img src="./img/aquietplace.jpeg" alt="quiet">
+                            <h5>A quiet place </h5>
                             <p>Subtitle</p>
         
                         </article>
     
                         <article>
     
-                            <div class="img"></div>
-                            <h5>Heavy Metal</h5>
+                            <img src="./img/split.jpeg" alt="split">
+                            <h5>Split</h5>
                             <p>Subtitle</p>
         
                         </article>
     
                         <article>
     
-                            <div class="img"></div>
-                            <h5>Heavy Metal</h5>
+                            <img src="./img/cure.jpeg" alt="cure">
+                            <h5>A cure for wellness</h5>
                             <p>Subtitle</p>
         
                         </article>
     
                         <article>
     
-                            <div class="img"></div>
-                            <h5>Heavy Metal</h5>
-                            <p>Subtitle</p>
-        
-                        </article>
-    
-                        <article>
-    
-                            <div class="img"></div>
-                            <h5>Heavy Metal</h5>
+                            <img src="./img/sinister.jpeg" alt="sinister">
+                            <h5>Sinister</h5>
                             <p>Subtitle</p>
         
                         </article>
@@ -173,15 +180,15 @@
     
                         <article>
     
-                            <div class="img"></div>
-                            <h5>Heavy Metal</h5>
+                            <img src="./img/radar.jpeg" alt="radar">
+                            <h5>Release radar</h5>
         
                         </article>
     
                         <article>
     
-                            <div class="img"></div>
-                            <h5>Heavy Metal</h5>
+                            <img src="./img/mixdaily.jpeg" alt="daily">
+                            <h5>Mix daily 1</h5>
         
                         </article>
     
@@ -200,15 +207,15 @@
     
                         <article>
     
-                            <div class="img"></div>
-                            <h5>Heavy Metal</h5>
+                            <img src="./img/youg.jpeg" alt="young">
+                            <h5>Lana del Rey</h5>
         
                         </article>
     
                         <article>
     
-                            <div class="img"></div>
-                            <h5>Heavy Metal</h5>
+                            <img src="./img/einaudi.jpeg" alt="einaudi">
+                            <h5>Ludovico Einaudi</h5>
         
                         </article>
     
@@ -232,23 +239,38 @@
                 <!--brano in ascolto-->
     
                 <div class="brano flex">
-                    <div class="img"></div>
+                    <img src="./img/sinister.jpeg" alt="sinister">
                     <div class="titolo-brano">
     
                         <h3>Sinister</h3>
                         <p>Brano nome</p>
+    
                     </div>
     
-                    <p></p>
-                    <p></p>
+                    <p><i class="fa-regular fa-heart"></i></p>
+                    <p><i class="fa-regular fa-folder"></i></p>
     
                 </div>
     
                 <!--barra strumenti musica in  ascolto-->
                 
-                <div class="play">
-    
-                    <div class="img"></div>
+                <div class="play flex">
+
+                    <div class="command flex">
+
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+
+                    </div>
+
+                    <div class="barra flex">
+                        <p>0:25</p>
+                        <hr>
+                        <p>4:35</p>
+                    </div>
     
                 </div>
     
