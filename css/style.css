@@ -10,6 +10,10 @@ body{
     color: white;
 }
 
+div.header-main{
+    height: calc(155vh - 110px);
+}
+
 .flex{
     display: flex;
 }
@@ -21,9 +25,10 @@ ul{
 /*CUSTOM HEADER*/
 
 header{
-    width: 20%;
+    width: 250px;
     background-color: hsl(0, 0%, 0%);
-    line-height: 2rem;
+    line-height: 1.5rem;
+    font-size: .9rem;
 }
 
 header ul>li{
@@ -33,26 +38,45 @@ header ul>li{
 /*style logo e nav*/
 
 section.logo>img{
-    height: 50px;
+    height: 40px;
     margin: 1rem;
 }
 
-section nav{
+/*style div.nav*/
+
+div.nav{
     margin: 1rem;
     color: hsl(0, 0%, 36.1%);
 }
 
-section nav ul li>img{
+/*style img header nav*/
+
+section.logo div.nav div.img-header{
+    flex-direction: column;
+    margin-right: .5rem;
+}
+
+section.logo div.nav div.img-header>img{
     height: 30px;
-    vertical-align: middle;
+    margin-bottom: .8rem;
+}
+
+/*style nav*/
+
+section.logo div.nav nav{
+    margin-top: .6rem;
+}
+
+section.logo div.nav nav ul>li{
+    margin-bottom: .8rem;
 }
 
 /*style playlist*/
 
 section.playlist{
     margin: 1rem;
-    padding-bottom: 10rem;
     color: hsl(0, 0%, 36.1%);
+    padding-bottom: 19.5rem;
 }
 
 section.playlist h4{
@@ -71,6 +95,7 @@ section.playlist input{
 }
 
 section.playlist p{
+    vertical-align: super;
     display: inline-block;
     margin-left: .5rem;
 }
@@ -78,20 +103,49 @@ section.playlist p{
 /*style footer header*/
 
 section.footer-header{
-    margin: 1rem;
+    margin:1rem;
 }
 
-section.footer-header>p{
-    color: hsl(0, 0%, 36.1%);
+/*style div.installa*/
+
+section.footer-header div.installa{
     padding-bottom: .8rem;
     margin-bottom: 1rem;
     border-bottom: solid hsl(0, 0%, 36.1%);
 }
 
+section.footer-header div.installa>img{
+    height: 20px;
+    vertical-align: middle;
+    filter:grayscale(100%);
+}
+
+section.footer-header div.installa>p{
+    color: hsl(0, 0%, 36.1%);
+    padding-left: 1rem;
+    vertical-align: middle;
+}
+
+/*style div.user*/
+
+section.footer-header div.user>img{
+    height: 30px;
+    vertical-align: middle;
+    background-color:hsl(0, 0%, 36.1%) ;
+    border-radius: 100%;
+    padding: 0rem 0.1rem;
+}
+
+section.footer-header div.user>h3{
+    padding-left: 1rem;
+    vertical-align: middle;
+}
+
 /*CUSTOM MAIN*/
 
 main{
-    width: 80%;
+    width: calc(100% - 250px);
+    overflow-y: auto;
     background-color: hsl(218.6, 25.9%, 10.6%);
 }
 
@@ -241,6 +295,7 @@ div.music-popular article>h5{
 /*CUSTOM FOOTER*/
 
 footer{
+    height: 110px;
     background-color: hsl(0, 0%, 15.7%);
   
 }
@@ -248,7 +303,7 @@ footer{
 footer section.toolbar{
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 /*style div.brano*/
