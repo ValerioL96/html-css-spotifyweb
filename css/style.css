@@ -61,6 +61,11 @@ section.logo div.nav div.img-header>img{
     margin-bottom: .8rem;
 }
 
+section.logo div.nav div.img-header:hover>img{
+    height: 30px;
+    margin-bottom: .8rem;
+    border-left: solid hsl(81.9, 95.3%, 58.2%);
+}
 /*style nav*/
 
 section.logo div.nav nav{
@@ -144,18 +149,37 @@ section.footer-header div.user>h3{
 /*CUSTOM MAIN*/
 
 main{
+    position: relative;
     width: calc(100% - 250px);
     overflow-y: auto;
     background-color: hsl(218.6, 25.9%, 10.6%);
 }
 
+main div.scrollbar{
+    justify-content: center;
+    width: 20px;
+    height:170vh;
+    background-color: hsl(0, 0%, 97.6%);
+}
+
+main div.scrollbar div.scrollbar-small{
+    width: 10px;
+    height: calc(155vh - 110px);
+    background-color:hsl(0, 0%, 78.4%);
+    overflow-y: auto;
+}
+
 /*style button upgrade*/
 
 main section.upgrade{
-    padding: 1rem;
+    position: fixed;
+    z-index: 1;
+    width: calc(100% - 250px);
+    padding: 1.5rem;
     justify-content: flex-end;
     align-items: center;
     background-color: hsl(222, 38.5%, 5.1%);
+    opacity: .5;
 }
 
 section.upgrade>input{
@@ -169,13 +193,14 @@ section.upgrade>input{
 /*style nav main*/
 
 main section.nav-main{
-    margin: 0rem 5rem 1rem;
+    margin: 6rem 5rem 1rem;
     padding-top: 1rem;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 section.nav-main ul>li{
+    color: hsl(225, 3.4%, 46.3%);
     display: inline-block;
     margin-left: 1rem;
 }
@@ -309,20 +334,22 @@ footer section.toolbar{
 /*style div.brano*/
 
 section.toolbar div.brano>img{
-    height: 50px;
+    height: 75px;
 }
 
 section.toolbar div.brano>p{
-
     color: hsl(0, 0%, 36.1%);
-    padding: 1rem 0rem 0rem .5rem;
+    font-size: 1rem;
+    padding: 2rem 0rem 0rem 1rem;
 }
+
+/*style titolo brano*/
 
 section.toolbar div.brano div.titolo-brano{
     padding-right: 2rem;
     padding-left: .5rem;
-    font-size: .8rem;
-    margin: .5rem;
+    font-size: 1rem;
+    margin: 1rem .5rem;
 }
 
 div.brano div.titolo-brano>p{
@@ -333,27 +360,60 @@ div.brano div.titolo-brano>p{
 /*style div.play*/
 
 section.toolbar div.play{
-    flex-direction: column;  
+    flex-direction: column; 
+    align-items: center;
 }
 
-div.play div.command>i{
-    padding: .8rem 1rem;
+div.play section.command>i{
+    padding:.8rem;
     font-size: 1.5rem;
 }
 
-div.play div.barra{
-    
+/*style barra*/
+
+div.play section.barra>p{
+    font-size: .8rem;
 }
 
+div.play section.barra div.barra-large{
+    height: 6px;
+    width: 500px;
+    border-radius: 22%;
+    background-color:  hsl(0, 0%, 36.1%);
+    margin: .3rem 1rem 0rem;
+}
+
+div.play section.barra div.barra-small{
+    height: 6px;
+    width: 100px;
+    border-radius: 15%;
+    background-color: hsl(0, 0%, 76.1%);
+}
 
 /*style div.struments*/
 
-section.toolbar div.struments>div.img{
-    height: 50px;
-    width: 200px;
-    background-color: coral;
-    
+div.struments div.command>i{
+    font-size: 1rem;
+    padding: 1.8rem .8rem;
 }
+
+/*style barra*/
+
+div.struments  div.barra-large{
+    height: 6px;
+    width: 150px;
+    border-radius: 13%;
+    background-color:  hsl(0, 0%, 36.1%);
+    margin: 2rem .5rem;
+}
+
+div.struments  div.barra-small{
+    height: 6px;
+    width: 30px;
+    border-radius: 5%;
+    background-color: hsl(0, 0%, 76.1%);
+}
+
 
 /*RESPONSIVE*/
 
