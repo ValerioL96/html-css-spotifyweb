@@ -61,7 +61,7 @@ section.logo div.nav div.img-header>img{
     margin-bottom: .8rem;
 }
 
-section.logo div.nav div.img-header:hover>img{
+section.logo div.nav div.img-header>img:hover{
     height: 30px;
     margin-bottom: .8rem;
     border-left: solid hsl(81.9, 95.3%, 58.2%);
@@ -74,6 +74,10 @@ section.logo div.nav nav{
 
 section.logo div.nav nav ul>li{
     margin-bottom: .8rem;
+}
+
+section.logo div.nav nav ul>li:hover{
+    color: white;
 }
 
 /*style playlist*/
@@ -105,6 +109,11 @@ section.playlist p{
     margin-left: .5rem;
 }
 
+section.playlist p:hover,
+section.playlist ul>li:hover{
+    color: white;
+}
+
 /*style footer header*/
 
 section.footer-header{
@@ -129,6 +138,10 @@ section.footer-header div.installa>p{
     color: hsl(0, 0%, 36.1%);
     padding-left: 1rem;
     vertical-align: middle;
+}
+
+section.footer-header div.installa>p:hover{
+    color: white;
 }
 
 /*style div.user*/
@@ -190,6 +203,13 @@ section.upgrade>input{
     border-radius: 80px;
 }
 
+section.upgrade>input:hover{
+    border: solid white;
+    color: white;
+    font-size: .9rem;
+    padding: .5rem 3.5rem;
+}
+
 /*style nav main*/
 
 main section.nav-main{
@@ -203,6 +223,12 @@ section.nav-main ul>li{
     color: hsl(225, 3.4%, 46.3%);
     display: inline-block;
     margin-left: 1rem;
+}
+
+section.nav-main ul>li:hover{
+    padding-bottom: .2rem;
+    border-bottom: solid hsl(81.9, 95.3%, 58.2%);
+    color: white;
 }
 
 /*style recent*/
@@ -230,7 +256,21 @@ section.recent div.music article{
 }
 
 div.music article>img{
+    display: inline-block;
     height: 180px;
+}
+
+div.music article>img.img-hover{
+    display: none;
+    height: 180px;
+}
+
+div.music article:hover>img{
+    display: none;
+}
+
+div.music article:hover>img.img-hover{
+    display: inline-block;
 }
 
 div.music article>h5{
@@ -272,7 +312,21 @@ section.doe div.music-doe article{
 }
 
 div.music-doe article>img{
+    display: inline-block;
     height: 180px;
+}
+
+div.music-doe article>img.img-hover{
+    display: none;
+    height: 180px;
+}
+
+div.music-doe article:hover>img{
+    display: none;
+}
+
+div.music-doe article:hover>img.img-hover{
+    display: inline-block;
 }
 
 div.music-doe article>h5{
@@ -309,8 +363,23 @@ section.popular div.music-popular article{
 }
 
 div.music-popular article>img{
+    display: inline-block;
     border-radius: 100%;
     height: 180px;
+}
+
+div.music-popular article>img.img-hover{
+    display: none;
+    border-radius: 100%;
+    height: 180px;
+}
+
+div.music-popular article:hover>img{
+    display: none;
+}
+
+div.music-popular article:hover>img.img-hover{
+    display: inline-block;
 }
 
 div.music-popular article>h5{
@@ -343,6 +412,10 @@ section.toolbar div.brano>p{
     padding: 2rem 0rem 0rem 1rem;
 }
 
+section.toolbar div.brano>p:hover{
+    color: white;
+}
+
 /*style titolo brano*/
 
 section.toolbar div.brano div.titolo-brano{
@@ -355,6 +428,11 @@ section.toolbar div.brano div.titolo-brano{
 div.brano div.titolo-brano>p{
     color: hsl(0, 0%, 36.1%);
     font-size:x-small;
+}
+
+div.brano div.titolo-brano>p:hover{
+    border-bottom: solid white;
+    color: white;
 }
 
 /*style div.play*/
