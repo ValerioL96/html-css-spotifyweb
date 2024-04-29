@@ -497,7 +497,82 @@ div.struments  div.barra-small{
 
 @media screen and (max-width:768px) {
     div.container{
-        width: 650px;
+        width: 570px;
+    }
+
+    section.recent div.music article{
+        display: flex;
+        flex-wrap: wrap;
+        width: calc((100% /4)- 1rem);
+        margin-right: 1rem;
+        text-align: center;
+        line-height: 1.2rem;
+      
+    }
+
+    div.music article>img,
+    div.music-doe article>img,
+    div.music-popular article>img{
+        display: inline-block;
+        height: 200px;
+    }
+    
+    div.music article>img.img-hover,
+    div.music-doe article>img.img-hover,
+    div.music-popular article>img.img-hover{
+        display: none;
+        height: 200px;
+    }
+    
+}
+
+
+@media screen and (max-width:576px) {
+    div.container{
+        width: 400px;
+    }
+        section.recent div.music article{
+            display: flex;
+            flex-wrap: wrap;
+            width: calc((100% /2)- 1rem);
+            margin-right: 1rem;
+            text-align: center;
+            line-height: 1.2rem;
+          
+        }
+    
+        div.music article>img,
+        div.music-doe article>img,
+        div.music-popular article>img{
+            display: inline-block;
+            height: 300px;
+        }
+        
+        div.music article>img.img-hover,
+        div.music-doe article>img.img-hover,
+        div.music-popular article>img.img-hover{
+            display: none;
+            height: 300px;
+        }
+    }
+    
+
+
+
+@media screen and (max-width:480px) {
+
+    div.music article>img,
+    div.music-doe article>img,
+    div.music-popular article>img{
+        display: inline-block;
+        height: 350px;
+    }
+    
+    div.music article>img.img-hover,
+    div.music-doe article>img.img-hover,
+    div.music-popular article>img.img-hover{
+        display: none;
+        height: 350px;
     }
     
 }
